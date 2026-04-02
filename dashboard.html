@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dashboard - BlueLeaf Expeditions</title>
+        <link rel="icon" type="img/png" href="images/Design_Fevicon.png">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="dashboard.css">
+        <script src="dashboard.js"></script>     
+    </head>
+    <body>
+
+        <nav class="navbar">
+            <a href="homepage.html" class="nav-link">Home</a>
+            <a href="booking.html" class="nav-link">Book a Trip</a>
+            <a href="dashboard.html" class="nav-link">Dashboard</a>
+        </nav>
+
+        <header class="dashboard_header">
+            <h1>Dashboard</h1>
+            <p class="dashboard_tagline">Manage your trips and bookings</p>
+            <img src="Images/Design_Header_Image.jpeg" alt="Company Photo" class="dashboard_photo">
+        </header>
+
+        <div class="dashboard_row">
+
+            <section class="current_bookings">
+                <h2 class="section_heading">Current Bookings</h2>
+
+                <div class="booking_card confirmed">
+                    <div class="booking_status">✅ Confirmed</div>
+                    <h3 class="booking_title">Dubai Super Adventure</h3>
+                    <p class="booking_info">📅 Dates: June 10 – June 14, 2025</p>
+                    <p class="booking_info">👥 Guests: 2 Adults</p>
+                    <p class="booking_info">💰 Total: $1,200</p>
+                    <button class="booking_btn">View Details</button>
+                </div>
+
+                <div class="booking_card inprogress">
+                    <div class="booking_status">🕐 In Progress</div>
+                    <h3 class="booking_title">Bali Cultural Tour</h3>
+                    <p class="booking_info">📅 Dates: July 20 – July 27, 2025</p>
+                    <p class="booking_info">👥 Guests: 3 Adults</p>
+                    <p class="booking_info">💰 Total: $2,400</p>
+                    <button class="booking_btn">Complete Booking</button>
+                </div>
+
+                <div class="trip_schedule">
+                    <h3 class="schedule_heading">Trip Schedule & Dates</h3>
+                    <table class="schedule_table">
+                        <tr>
+                            <th>Trip</th>
+                            <th>Departure</th>
+                            <th>Return</th>
+                            <th>Status</th>
+                        </tr>
+                        <tr>
+                            <td>Dubai Adventure</td>
+                            <td>June 10</td>
+                            <td>June 14</td>
+                            <td class="status_confirmed">Confirmed</td>
+                        </tr>
+                        <tr>
+                            <td>Bali Tour</td>
+                            <td>July 20</td>
+                            <td>July 27</td>
+                            <td class="status_pending">Pending</td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+
+            <section class="changes_section">
+                <h2 class="section_heading">Changes</h2>
+
+                <img src="Images/design_dubai_adventure.jpeg" alt="Trip Image" class="changes_img">
+
+                <div class="changes_block">
+                    <h3 class="changes_subheading">📋 Schedule Changes</h3>
+                    <p class="changes_text">• Dubai flight rescheduled to 10:30 AM on June 10.</p>
+                    <p class="changes_text">• Hotel check-in updated to June 10, 3:00 PM.</p>
+                </div>
+
+                <div class="changes_block">
+                    <h3 class="changes_subheading">✈️ Travel News & Updates</h3>
+                    <p class="changes_text">• Visa on arrival available for Indian passport holders in Dubai.</p>
+                    <p class="changes_text">• Bali requires tourist levy of $10 upon arrival.</p>
+                </div>
+            </section>
+
+        </div>
+
+        <div class="dashboard_row">
+
+            <section class="booking_details">
+                <h2 class="section_heading">Booking Additional Details</h2>
+
+                <div class="details_grid">
+                    <div class="detail_card">
+                        <img src="Images/design_dubai_adventure.jpeg" alt="Dubai">
+                        <div class="detail_info">
+                            <h3>Dubai Super Adventure</h3>
+                            <p>🏨 Hotel: Atlantis The Palm</p>
+                            <p>🍽️ Meals: Breakfast included</p>
+                            <p>🚌 Transport: Airport pickup included</p>
+                        </div>
+                    </div>
+                    <div class="detail_card">
+                        <img src="Images/design_deals_1.jpeg" alt="Bali">
+                        <div class="detail_info">
+                            <h3>Bali Cultural Tour</h3>
+                            <p>🏨 Hotel: Ubud Jungle Resort</p>
+                            <p>🍽️ Meals: All meals included</p>
+                            <p>🚌 Transport: Private driver</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="travel_details">
+                    <h3 class="changes_subheading">🗺️ Travel Details</h3>
+                    <p class="changes_text">• Carry valid passport with 6+ months validity.</p>
+                    <p class="changes_text">• Travel insurance is strongly recommended.</p>
+                    <p class="changes_text">• Emergency contact: +91-98765-43210</p>
+                </div>
+            </section>
+
+            <section class="payment_section">
+                <h2 class="section_heading">Payment</h2>
+
+                <div class="payment_confirmation">
+                    <h3 class="changes_subheading">✅ Payment Confirmation</h3>
+                    <div class="checklist">
+                        <label><input type="checkbox" checked disabled> Booking deposit paid</label>
+                        <label><input type="checkbox" checked disabled> Hotel confirmed</label>
+                        <label><input type="checkbox"> Final payment due</label>
+                    </div>
+                </div>
+
+                <div class="card_details">
+                    <h3 class="changes_subheading">💳 Card Details</h3>
+                    <form class="payment_form">
+                        <input type="text" placeholder="Cardholder Name" class="payment_input">
+                        <input type="text" placeholder="Card Number (XXXX XXXX XXXX XXXX)" class="payment_input">
+                        <div class="card_row">
+                            <input type="text" placeholder="Expiry (MM/YY)" class="payment_input half">
+                            <input type="text" placeholder="CVV" class="payment_input half">
+                        </div>
+                        <button type="submit" class="pay_btn">Confirm Payment</button>
+                    </form>
+                </div>
+
+                <div class="trip_costs">
+                    <h3 class="changes_subheading">💰 Trip Costs</h3>
+                    <table class="cost_table">
+                        <tr>
+                            <td>Dubai Adventure</td>
+                            <td>$1,200</td>
+                        </tr>
+                        <tr>
+                            <td>Bali Tour</td>
+                            <td>$2,400</td>
+                        </tr>
+                        <tr class="total_row">
+                            <td><b>Total</b></td>
+                            <td><b>$3,600</b></td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+
+        </div>
+        <footer class="dashboard_footer">
+            <div class="footer_contact">
+                <p>📧 yashwanthaddala13@gmail.com</p>
+                <p>📞 XXX-XXX-XXXX</p>
+            </div>
+            <div class="footer_location">
+                <a href="https://www.google.com/maps?q=mauna+loa" target="_blank">
+                    <img src="Images/google_maps_design.png" alt="Location" class="footer_map">
+                </a>
+                <p>Our Location</p>
+            </div>
+            <div class="footer_urgent">
+                <h3>🚨 Urgent Message</h3>
+                <p>For urgent help call: +91-98765-43210</p>
+            </div>
+            <div class="footer_chatbot">
+                <h3>🤖 AI Chatbot</h3>
+                <div class="chatbot_box" id="chatbot_box">
+                    <p class="bot_msg">Hi! How can I help you today?</p>
+                </div>
+                <div class="chatbot_input">
+                    <input type="text" id="chatbot_input" placeholder="Type a message...">
+                    <button onclick="sendMessage()" class="chat_send_btn">Send</button>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
