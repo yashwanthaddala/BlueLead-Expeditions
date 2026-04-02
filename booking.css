@@ -1,0 +1,317 @@
+body {
+    background-color: #E0FBFC;
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', Arial, sans-serif;
+    color: #293241;
+    padding-bottom: 40px;
+}
+
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    background-color: #3d5a80;
+    padding: 12px 24px;
+    box-shadow: 0 2px 10px rgba(41, 50, 65, 0.4);
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.nav-link {
+    color: #E0FBFC;
+    text-decoration: none;
+    padding: 7px 16px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+.nav-link:visited { color: #E0FBFC; }
+
+.nav-link:hover {
+    background-color: #98C1D9;
+    color: #293241;
+}
+
+
+.booking_header {
+    background: linear-gradient(160deg, #98C1D9 0%, #b8d8e8 60%, #E0FBFC 100%);
+    padding: 70px 30px 40px;
+    border-bottom: 2px solid #293241;
+    text-align: center;
+}
+
+.booking_header h1 {
+    font-family: Georgia, serif;
+    font-size: 2.6rem;
+    color: #293241;
+    margin-bottom: 8px;
+}
+
+.booking_tagline {
+    font-size: 1.05rem;
+    color: #3d5a80;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.booking_header_img {
+    height: 260px;
+    border-radius: 14px;
+    box-shadow: 0 6px 20px rgba(41, 50, 65, 0.25);
+    transition: transform 0.3s ease;
+}
+
+.booking_header_img:hover {
+    transform: translateY(-4px);
+}
+
+
+.booking_row {
+    display: flex;
+    gap: 12px;
+    margin: 16px;
+    align-items: flex-start;
+}
+
+
+.search_section,
+.booking_types,
+.packages_section,
+.experiences_section,
+.reviews_section {
+    border: 2px dashed #3d5a80;
+    border-radius: 12px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.4);
+}
+
+.search_section { width: 25%; }
+.booking_types  { width: 35%; }
+.packages_section { width: 40%; }
+.experiences_section { width: 50%; }
+.reviews_section { width: 50%; }
+
+.section_heading {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.1rem;
+    color: #293241;
+    padding-left: 12px;
+    border-left: 3px solid #3d5a80;
+    margin-bottom: 16px;
+    text-align: left;
+}
+
+
+.destination_input,
+.calendar_input {
+    width: 100%;
+    padding: 9px 12px;
+    border: 1px solid #98C1D9;
+    border-radius: 8px;
+    font-size: 0.85rem;
+    background-color: #f0fbfc;
+    color: #293241;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+.destination_input:focus,
+.calendar_input:focus {
+    border-color: #3d5a80;
+    outline: none;
+}
+
+.search_btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #3d5a80;
+    color: #E0FBFC;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 4px;
+}
+
+.search_btn:hover {
+    background-color: #293241;
+    transform: translateY(-2px);
+}
+
+.search_result {
+    margin-top: 10px;
+    font-size: 0.82rem;
+    color: #EE6C4D;
+    font-style: italic;
+    text-align: left;
+}
+
+
+.types_grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.type_card {
+    width: 45%;
+    border: 1px solid #98C1D9;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #f0fbfc;
+    transition: border-color 0.3s ease, transform 0.2s ease, background-color 0.3s ease;
+    text-align: center;
+}
+
+.type_card img {
+    width: 100%;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 6px;
+}
+
+.type_card p {
+    font-size: 0.82rem;
+    color: #293241;
+    margin: 0;
+}
+
+.type_card:hover {
+    border-color: #3d5a80;
+    transform: translateY(-3px);
+}
+
+.type_card.selected {
+    border-color: #EE6C4D;
+    background-color: rgba(238, 108, 77, 0.08);
+}
+
+
+.packages_grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.package_card {
+    width: 45%;
+    border: 1px solid #98C1D9;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #f0fbfc;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.package_card img {
+    width: 100%;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 6px;
+}
+
+.package_card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 16px rgba(41, 50, 65, 0.15);
+}
+
+.package_name {
+    font-size: 0.85rem;
+    font-weight: bold;
+    color: #293241;
+    margin: 4px 0;
+}
+
+.package_price {
+    font-size: 0.82rem;
+    color: #EE6C4D;
+    font-weight: bold;
+}
+
+
+.experience_card {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+    background-color: rgba(152, 193, 217, 0.15);
+    border-radius: 10px;
+    padding: 12px;
+    margin-bottom: 12px;
+}
+
+.experience_card img {
+    height: 90px;
+    width: 120px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.experience_info h3 {
+    font-size: 0.9rem;
+    color: #293241;
+    margin-bottom: 6px;
+}
+
+.experience_info p {
+    font-size: 0.8rem;
+    color: #293241;
+    line-height: 1.6;
+    margin-bottom: 8px;
+}
+
+.book_now_btn {
+    background-color: #EE6C4D;
+    color: white;
+    border: none;
+    padding: 7px 16px;
+    border-radius: 8px;
+    font-size: 0.82rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.book_now_btn:hover {
+    background-color: #d45a3a;
+    transform: translateY(-2px);
+}
+
+
+.review_card {
+    background-color: rgba(152, 193, 217, 0.15);
+    border-radius: 10px;
+    padding: 12px 16px;
+    margin-bottom: 12px;
+    text-align: left;
+    border-left: 3px solid #EE6C4D;
+}
+
+.review_stars {
+    font-size: 0.9rem;
+    margin-bottom: 4px;
+}
+
+.review_text {
+    font-size: 0.82rem;
+    color: #293241;
+    line-height: 1.6;
+    font-style: italic;
+    margin-bottom: 4px;
+}
+
+.review_author {
+    font-size: 0.78rem;
+    color: #3d5a80;
+    font-weight: bold;
+}

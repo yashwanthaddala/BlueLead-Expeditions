@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Book a Trip - BlueLeaf Expeditions</title>
+        <link rel="icon" type="img/png" href="images/Design_Fevicon.png">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="booking.css">
+    </head>
+    <body>
+
+        <nav class="navbar">
+            <a href="homepage.html" class="nav-link">Home</a>
+            <a href="booking.html" class="nav-link">Book a Trip</a>
+            <a href="dashboard.html" class="nav-link">Dashboard</a>
+        </nav>
+
+        <header class="booking_header">
+            <h1>Book a Trip</h1>
+            <p class="booking_tagline">Find your perfect adventure</p>
+            <img src="Images/Design_Header_Image.jpeg" alt="Travel" class="booking_header_img">
+        </header>
+
+        <div class="booking_row">
+
+            <section class="search_section">
+                <h2 class="section_heading">Destination</h2>
+                <input type="text" placeholder="To:" class="destination_input">
+                <input type="text" placeholder="From:" class="destination_input">
+                <input type="date" class="calendar_input">
+                <button class="search_btn" onclick="searchTrip()">Search Trips</button>
+                <p id="search_result" class="search_result"></p>
+            </section>
+
+            <section class="booking_types">
+                <h2 class="section_heading">Types of Bookings</h2>
+                <div class="types_grid">
+                    <div class="type_card" onclick="selectType(this)">
+                        <img src="Images/design_dubai_adventure.jpeg" alt="Hotels">
+                        <p>🏨 Hotels</p>
+                    </div>
+                    <div class="type_card" onclick="selectType(this)">
+                        <img src="Images/design_deals_1.jpeg" alt="Flights">
+                        <p>✈️ Flights</p>
+                    </div>
+                    <div class="type_card" onclick="selectType(this)">
+                        <img src="Images/design_deals_2.webp" alt="Tours">
+                        <p>🗺️ Tours</p>
+                    </div>
+                    <div class="type_card" onclick="selectType(this)">
+                        <img src="Images/design_deals_3.avif" alt="Packages">
+                        <p>🎒 Packages</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="packages_section">
+                <h2 class="section_heading">Packages</h2>
+                <div class="packages_grid">
+                    <div class="package_card">
+                        <img src="Images/design_dubai_adventure.jpeg" alt="Dubai">
+                        <p class="package_name">Dubai Deluxe</p>
+                        <p class="package_price">$1,200</p>
+                    </div>
+                    <div class="package_card">
+                        <img src="Images/design_deals_1.jpeg" alt="Bali">
+                        <p class="package_name">Bali Escape</p>
+                        <p class="package_price">$2,400</p>
+                    </div>
+                    <div class="package_card">
+                        <img src="Images/design_deals_2.webp" alt="Paris">
+                        <p class="package_name">Paris Getaway</p>
+                        <p class="package_price">$3,100</p>
+                    </div>
+                    <div class="package_card">
+                        <img src="Images/design_deals_3.avif" alt="Tokyo">
+                        <p class="package_name">Tokyo Explorer</p>
+                        <p class="package_price">$2,800</p>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+        <div class="booking_row">
+
+            <section class="experiences_section">
+                <h2 class="section_heading">Top Experiences</h2>
+                <div class="experience_card">
+                    <img src="Images/design_deals_1.jpeg" alt="Indigenous">
+                    <div class="experience_info">
+                        <h3>Unique Indigenous Experience</h3>
+                        <p>Immerse yourself in authentic local culture and traditions.</p>
+                        <button class="book_now_btn">Book Now</button>
+                    </div>
+                </div>
+                <div class="experience_card">
+                    <img src="Images/design_dubai_adventure.jpeg" alt="Dubai">
+                    <div class="experience_info">
+                        <h3>Dubai Adventure</h3>
+                        <p>3 days and 4 nights of non-stop excitement in Dubai.</p>
+                        <button class="book_now_btn">Book Now</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="reviews_section">
+                <h2 class="section_heading">Customer Reviews</h2>
+                <div class="review_card">
+                    <p class="review_stars">⭐⭐⭐⭐⭐</p>
+                    <p class="review_text">"Absolutely amazing trip, everything was perfectly planned!"</p>
+                    <p class="review_author">— Sarah M.</p>
+                </div>
+                <div class="review_card">
+                    <p class="review_stars">⭐⭐⭐⭐⭐</p>
+                    <p class="review_text">"Best travel company I've used, highly recommend BlueLeaf!"</p>
+                    <p class="review_author">— Raj K.</p>
+                </div>
+                <iframe width="100%" height="200"
+                    src="https://www.youtube.com/embed/5qkXMmGW0YA"
+                    frameborder="0" allowfullscreen
+                    style="border-radius:10px; margin-top:14px;">
+                </iframe>
+            </section>
+
+        </div>
+
+        <script src="booking.js"></script>
+    </body>
+</html>
